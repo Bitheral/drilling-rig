@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,29 +6,39 @@ public class WorldGen : MonoBehaviour
 {
     public int ySize;
     public int xSize;
+
+    public int noiseScale;
     public GameObject[] ores;
     public GameObject[] materials;
+
+    public Texture2D texEx;
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int y = 0; y < ySize; y++)
-        {
-            for (int x = 0; x < xSize; x++)
-            {
-                bool isMaterial = Convert.ToBoolean(Mathf.FloorToInt(UnityEngine.Random.Range(0, 1)));
-                if (!isMaterial)
-                {
-                    // Generate Ores
-                    int randomIndex = UnityEngine.Random.Range(0, ores.Length - 1);
-                    GameObject selectedOre = Instantiate(ores[randomIndex], new Vector3(x, -y, 0), Quaternion.identity, transform);
+        Texture2D tex = new Texture2D(xSize, ySize);
 
-                }
-                else
+        for (int x = 0; x < xSize; x++)
+        {
+            for (int y = 0; y < ySize; y++)
+            {
+                float xCoord = (float)x / xSize * noiseScale;
+                float yCoord = (float)y / ySize * noiseScale;
+                float sample = Mathf.PerlinNoise(xCoord, yCoord);
+                if (sample > 0.5)
                 {
-                    // Generate Material
-                    int randomIndex = UnityEngine.Random.Range(0, materials.Length - 1);
-                    GameObject selectedMaterial = Instantiate(materials[randomIndex], new Vector3(x, -y, 0), Quaternion.identity, transform);
+                    // Mat
+                    GeneratePrefab(materials, x, y, 0);
+                } else
+                {
+                    // Ore
+                    if((sample < 0.25f && sample > 0.1f) && y > Random.Range(5,10))
+                    {
+                        GeneratePrefab(ores, x, y, 0);
+                    } else
+                    {
+                        GeneratePrefab(materials, x, y, 0);
+                    }
                 }
             }
         }
@@ -39,5 +48,11 @@ public class WorldGen : MonoBehaviour
     void Update()
     {
 
+    }
+
+    void GeneratePrefab(GameObject[] array, int x, int y, int z)
+    {
+        int random = UnityEngine.Random.Range(0, array.Length);
+        Instantiate(array[random], new Vector3(x, -y, z), Quaternion.identity, transform);
     }
 }
