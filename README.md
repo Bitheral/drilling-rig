@@ -1,3 +1,5 @@
+![cover.png](https://static.jam.vg/content/8cc/4/z/3c695.png)
+
 # **Read my post-mortem**
 
 ## **Digger** is a simple 3D digging "sandbox" where the player is able to dig around their surroundings and collect valuable metals!
