@@ -1,3 +1,5 @@
+# **Read my post-mortem**
+
 ## **Digger** is a simple 3D digging "sandbox" where the player is able to dig around their surroundings and collect valuable metals!
 
 # Controls:
@@ -16,6 +18,3 @@ Download the zip file and extract it to someplace easy to find, and run "Digger.
 
 # **Development timelapse releasing soon!**
 ## Subscribe to my [YouTube](https://www.youtube.com/channel/UC_AsgQ4swHezeHZo-T3NGJA) to watch the timelapse when it's released!
-
-
-## **Read my post-mortem**
