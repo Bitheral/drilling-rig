@@ -14,9 +14,5 @@ Download the zip file and extract it to someplace easy to find, and run "Digger.
 ![2.png](https://static.jam.vg/raw/8cc/4/z/3c556.png)
 ![3.png](https://static.jam.vg/raw/8cc/4/z/3c557.png)
 
-# Source Code:
-
-I have all assets and code up on GitHub in case other people may want to either experiment with how I created the prototype or want to create a clone, or maybe continue its development!
-
 # **Development timelapse releasing soon!**
 ## **Read my post-mortem**
