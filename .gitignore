@@ -60,6 +60,10 @@ sysinfo.txt
 *.aab
 *.unitypackage
 
+# Other
+*.otf
+*.otf.meta
+
 # Crashlytics generated file
 crashlytics-build.properties
 

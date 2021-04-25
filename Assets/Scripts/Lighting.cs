@@ -21,6 +21,6 @@ public class Lighting : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(player.transform.position, distanceMeter.transform.position);
-        directionalLight.color = Color.Lerp(Color.white, Color.black, distance / (mapEnd / 4));
+        directionalLight.color = Color.Lerp(Color.white, Color.black, distance / (mapEnd / 2));
     }
 }
