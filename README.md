@@ -2,7 +2,7 @@
 
 # [**Read my post-mortem**](https://ldjam.com/events/ludum-dare/48/digger-1/drilling-rig-a-post-mortem)
 
-## **Digger** is a simple 3D digging "sandbox" where the player is able to dig around their surroundings and collect valuable metals!
+## **Drilling Rig** is a simple 3D digging "sandbox" where the player is able to dig around their surroundings and collect valuable metals!
 
 # Controls:
 - Move Drill Rig - A, D
