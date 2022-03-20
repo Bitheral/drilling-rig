@@ -1,9 +1,9 @@
 {
   "body":"**Drilling Rig** is a simple 3D digging \"sandbox\" where the player is able to dig around their surroundings and collect valuable metals!",
-  "gamejam":"ludum-dare",
-  "isJam":true,
   "link":"https://ldjam.com/events/ludum-dare/48/digger-1",
   "name":"Drilling Rig",
   "order":3,
-  "type":"game"
+  "tags": [
+    "Ludum Dare"
+  ]
 }
