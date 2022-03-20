@@ -1,4 +1,4 @@
-![cover.png](https://static.jam.vg/content/8cc/4/z/3c716.png)
+![cover.png](https://static.jam.vg/raw/8cc/4/z/3c716.png)
 
 # [**Read my post-mortem**](https://ldjam.com/events/ludum-dare/48/digger-1/drilling-rig-a-post-mortem)
 
