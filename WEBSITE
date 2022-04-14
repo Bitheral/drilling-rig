@@ -4,6 +4,7 @@
   "name": "Drilling Rig",
   "order": 7,
   "tags": [
-    "Ludum Dare"
+    "Ludum Dare",
+    "Game"
   ]
 }
