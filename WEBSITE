@@ -3,6 +3,7 @@
   "link": "https://ldjam.com/events/ludum-dare/48/digger-1",
   "name": "Drilling Rig",
   "order": 7,
+  "image_id": "drilling-rig"
   "tags": [
     "Ludum Dare",
     "Game"
